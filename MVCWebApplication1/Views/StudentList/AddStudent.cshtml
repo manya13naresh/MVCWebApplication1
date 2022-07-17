@@ -1,0 +1,20 @@
+﻿@model StudentData
+    @using (Html.BeginForm("Students", "StudentList"))
+{
+    @Html.Label("Id:")
+    @Html.TextBoxFor(x=>x.Id)
+    <br>
+    @Html.Label("Firstname:")
+    @Html.TextBoxFor(x=>x.FirstName)
+    <br>
+    @Html.Label("Lastname:")
+    @Html.TextBoxFor(x=>x.LastName)
+    <br>
+    @Html.Label("Age:")
+    @Html.TextBoxFor(x=>x.Age)
+        <br >
+    @Html.Label("City:")
+    @Html.TextBoxFor(x=>x.City)
+    <br >
+    <input type="submit" value="Save"/> 
+}

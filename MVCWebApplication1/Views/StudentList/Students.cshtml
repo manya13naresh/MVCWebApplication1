@@ -1,0 +1,35 @@
+﻿
+@model List<StudentData>
+<h1>STUDENT DETAILS</h1>
+  <table >
+      <tr style="color:forestgreen;text-align:center;">
+            <th style="padding-right:20px;">Firstname</th>
+            <th style="padding-right:20px;">Lastname</th>
+            <th style="padding-right:20px;">Age</th>
+            <th style="padding-right:20px;">City</th>
+            </tr>
+                @foreach(var students in Model)
+                {   
+             <tr>
+              <td>  
+                  @students.FirstName
+                  </td>
+              <td> 
+                  @students.LastName
+                  </td>
+              <td> 
+                  @students.Age
+                  </td>
+               <td>
+                   @students.City</td>
+               </tr>
+                }
+                </table>
+                @Html.ActionLink("Addstudent","AddStudent","StudentList")
+                 
+
+
+                
+               
+        
+         
